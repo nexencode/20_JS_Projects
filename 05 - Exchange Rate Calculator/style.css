@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+    --primary-color: #6f5af1;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    margin: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+.btn {
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 12px;
+}
+
+.money-img {
+    width: 150px;
+}
+
+.currancy {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currancy select {
+    padding: 10px 20px 10px 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    border-radius: 5px;
+    background-image: url("./img/iconmonstr-arrow-24.svg");
+    background-position: right 10px top 50%, 0, 0;
+    background-size: 12px auto, 100%;
+    background-repeat: no-repeat;
+}
+
+.currancy input {
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+    /* border: 1px solid rgba(128, 128, 128, 0.425); */
+}
+
+.swap-rate-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    color: var(--primary-color);
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+select:focus, input:focus, button:focus {
+    outline: 0;
+}
+
+@media(max-width: 600px) {
+    .currancy input {
+        width: 200px;
+    }
+}
+
